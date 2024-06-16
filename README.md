@@ -73,6 +73,7 @@ La siguiente sintaxis, es la forma adecuada para registrar el usuario y así pod
 	"clave" : "123456"
 }
 ```
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/d6be2769-e902-464f-921d-f1996f47392b)
 
 ####¡¡¡IMPORTANTE!!!
 Para las siguientes request es importante tener el **token** generado o de lo contrario arrojara un error **403**, así como tambien agregar en cada metodo el tipo de autorización **Bearer Token** y copiar en el espacio del **TOKEN** el texto generado al momento de logearse.
@@ -82,7 +83,12 @@ Al usar la siguiente **URL ** junto con el metodo **POST** se pordrá registrar 
 ```
 http://localhost:8080/topicos
 ```
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/899362bf-76fe-43a9-a9ff-841350b0e6ef)
+
 Junto con la siguiente sintaxis (Es **IMPORTANTE** que se registren todos los campos, de lo contrario arrojara un error **403**):
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/3c71c976-6eb1-4dc0-a8f1-ae9722cf77e3)
+
+
 ```
 {
 	"mensaje" : "Hola",
@@ -96,20 +102,27 @@ Al usar la siguiente **URL ** junto con el metodo **GET** se pordrá obtener un 
 ```
 http://localhost:8080/topicos
 ```
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/9ceb3e5e-c0b2-4b2d-96f2-46e965082519)
 
 ###Actualizar:
 Al usar la siguiente **URL ** junto con el metodo **PUT** se pordrá obtener un listado con los topicos registrados.
 ```
 http://localhost:8080/topicos
 ```
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/defc18d8-4f44-4967-8d72-18101ef0c41f)
 
 ###Borar:
 Al usar la siguiente **URL ** junto con el id del topico y el metodo  **DELETE** se pordrá obtener un listado con los topicos registrados.
 ```
 http://localhost:8080/topicos/id_del_topico_a_borrar
 ```
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/7d74f8e7-5846-400a-bba7-91c6c5f31501)
+
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/c4a89c09-fe36-4d2f-96fb-d34b95e2a6ce)
+
 Cabe resaltar que solo se hará un borrado **logico**, por lo tanto los topicos registrados aún serán visibles en la base de datos con el diferencial que su estado activo será (0), pero no se podrán observar al moemnto de listarlos.
-![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/d8ce6d63-7bca-4432-bcaf-ad5f77c693e5)
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/9e2197c7-d84f-432f-8560-482b13867317)
+
 
 
 #Oportunidades de mejora:
