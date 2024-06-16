@@ -75,7 +75,7 @@ La siguiente sintaxis, es la forma adecuada para registrar el usuario y así pod
 ```
 
 ####¡¡¡IMPORTANTE!!!
-Para las siguientes request es importante tener el **token** generado o de lo contrario arrojara un error **403**, así como tambien agregar en cada metodo el tipo de autorización **Bearer Token**.
+Para las siguientes request es importante tener el **token** generado o de lo contrario arrojara un error **403**, así como tambien agregar en cada metodo el tipo de autorización **Bearer Token** y copiar en el espacio del **TOKEN** el texto generado al momento de logearse.
 
 ###Registrar:
 Al usar la siguiente **URL ** junto con el metodo **POST** se pordrá registrar el topico.
@@ -109,6 +109,8 @@ Al usar la siguiente **URL ** junto con el id del topico y el metodo  **DELETE**
 http://localhost:8080/topicos/id_del_topico_a_borrar
 ```
 Cabe resaltar que solo se hará un borrado **logico**, por lo tanto los topicos registrados aún serán visibles en la base de datos con el diferencial que su estado activo será (0), pero no se podrán observar al moemnto de listarlos.
+![image](https://github.com/Sergio-Arevalo/api_request/assets/157325483/d8ce6d63-7bca-4432-bcaf-ad5f77c693e5)
+
 
 #Oportunidades de mejora:
 * Si bien es cierto que el código tiene la posibilidad de realizar la creación de la base y sus tablas con ayuda de las migraciones, por la inexperiencia frente al uso de estas, se decidió hacerlo manualmente con ayuda del gestor de bases de datos.
