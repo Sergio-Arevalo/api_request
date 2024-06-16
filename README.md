@@ -12,9 +12,9 @@ spring.datasource.password=contraseña_de_la_base_de_datos
 
 También se recomienda crear la base de datos con las siguientes características:
 
-CREATE DATABASE Nombre_de_la_base_de_datos;
-use Nombre_de_la_base_de_datos;
-create table topicos(
+1.CREATE DATABASE Nombre_de_la_base_de_datos;
+2.use Nombre_de_la_base_de_datos;
+3.create table topicos(
 
     id bigint not null auto_increment,
     mensaje varchar(500) not null,
@@ -24,8 +24,8 @@ create table topicos(
      
     primary key(id)
 );
-update topicos set activo = 1;
-create table usuarios(
+4.update topicos set activo = 1;
+5.create table usuarios(
 
     id bigint not null auto_increment,
     login varchar(100) not null,
@@ -34,14 +34,14 @@ create table usuarios(
     primary key(id)
 );
 
-INSERT INTO usuarios (login, clave)
-VALUES ("master", "$2a$12$D2iw6kpv3tZxRb265YJYHOqLoLprxFOZBlxj7IyRlqXLi3F.TrubK");
+6.INSERT INTO usuarios (login, clave)
+7.VALUES ("master", "$2a$12$D2iw6kpv3tZxRb265YJYHOqLoLprxFOZBlxj7IyRlqXLi3F.TrubK");
 
 Al correr estos comandos en el orden especificado, el programa correrá correctamente.
 
 <h2>Oportunidades de mejora:</h2>
-Si bien es cierto que el código tiene la posibilidad de realizar la creación de la base y sus tablas con ayuda de las migraciones, por la inexperiencia frente al uso de estas, se decidió hacerlo manualmente con ayuda del gestor de bases de datos.
++Si bien es cierto que el código tiene la posibilidad de realizar la creación de la base y sus tablas con ayuda de las migraciones, por la inexperiencia frente al uso de estas, se decidió hacerlo manualmente con ayuda del gestor de bases de datos.
 
-Se lograron observar problemas de compilación en el código despúes de que se usaba un token por un tiempo prolongado, para "solventarlo" se tuvo que borrar la base de datos y crearla nuevamente, con ello se restauraba el programa pero a cambio se perdia la información.
++Se lograron observar problemas de compilación en el código despúes de que se usaba un token por un tiempo prolongado, para "solventarlo" se tuvo que borrar la base de datos y crearla nuevamente, con ello se restauraba el programa pero a cambio se perdia la información.
 
-Por último si tiene la oportunidad de corregirme, no dude en comunicarse conmigo, estare atento.
++Por último si tiene la oportunidad de corregirme, no dude en comunicarse conmigo, estare atento.
